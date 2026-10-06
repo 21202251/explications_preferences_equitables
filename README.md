@@ -115,10 +115,7 @@ Les tests unitaires permettent de vérifier individuellement les différents él
 
 Le projet utilise notamment **Gurobi** pour résoudre les programmes linéaires générés par l'approche de programmation linéaire.
 
-Le chemin d'installation de Gurobi doit être adapté dans les fichiers :
-
-- `algorithmes_owa.py` ;
-- `schemas_ATX.py`.
+Le chemin d'installation de Gurobi doit être adapté dans le fichier : `outils_programmation_lineaire.py`.
 
 Les autres dépendances Python nécessaires au fonctionnement du projet sont :
 
