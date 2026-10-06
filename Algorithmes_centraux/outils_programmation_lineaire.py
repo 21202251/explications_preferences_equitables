@@ -2,6 +2,10 @@ import csv
 import numpy as np
 import numpy.typing as npt
 
+chemin_gurobi: str = r"C:\gurobi1202\win64\bin\gurobi_cl" # a remplacer en fonction de l'ordinateur / os
+
+# OUTILS PROGRAMMATION LINEAIRE #
+
 def pl_solutions(nom_fichier: str)-> tuple[float, dict[str, float]]:
     '''
     Retourne le tuple (solution objectif, dictionnaire (variable, valeur))
@@ -36,7 +40,6 @@ def pl_solutions(nom_fichier: str)-> tuple[float, dict[str, float]]:
 
     except:
         return (-1, dict())
-        assert "Mauvais" == "Format", "Le contenu du fichier n'est pas formate de la maniere suivante :\n\t1 ligne d'entete, 1 ligne '# Objective value = <solution>',  1+ ligne(s) '<nom_variable> <solution>'."
 
     return (solution_float, dico_solutions)
 
@@ -106,7 +109,7 @@ def lister_var( nvar: str,
         indices = tuple(int(i) for i in indice)
         dic[indices if len(indices) > 1 else indices[0]] = val
 
-    # Détermination des dimensions / mappings
+    # Determination des dimensions / mappings
     if ensembles is not None:
         mappings = tuple({indice: i for i, indice in enumerate(ensemble)} for ensemble in ensembles)
         dimensions = tuple(len(ensemble) for ensemble in ensembles)
@@ -115,7 +118,7 @@ def lister_var( nvar: str,
         mappings = tuple({i: i for i in range(dim)} for dim in dimensions)
 
     else:
-        # Dimensions déduites des indices présentes
+        # Dimensions deduites des indices presentes
         if not dic:
             return dic, []
 
@@ -167,9 +170,9 @@ def afficher_var(   nvar: str,
     Parametres
     ----------
         nvar : nom de la variable
-        mat : matrice à afficher
-        entier : vrai si les variables sont entières, faux si elles sont réelles
-        axes : ensembles d'indices utilisés pour les dimensions.
+        mat : matrice a afficher
+        entier : vrai si les variables sont entieres, faux si elles sont reelles
+        axes : ensembles d'indices utilises pour les dimensions.
                Par exemple :
                    None              -> indices 0, 1, 2, ...
                    (L,)              -> indices de L

@@ -2,12 +2,11 @@ import numpy as np
 import numpy.typing as npt 
 
 import subprocess
-chemin_gurobi: str = r"C:\gurobi1202\win64\bin\gurobi_cl" # a remplacer en fonction de l'ordinateur / os
 
 from Algorithmes_centraux.outils_programmation_lineaire import *
 from Algorithmes_centraux.programmation_lineaire import *
 
-# Explications ATX #
+# EXPLICATIONS ATX #
 
 def ATX(vb: npt.NDArray, va: npt.NDArray, 
         heuristique, pretraitement = None, don_final: bool = False, 
@@ -129,7 +128,7 @@ def recuperer_PL_ATX(l: int, n: int, vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
-        timeout: 
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai (version indices de 1 a n)
     '''
     if verbose:

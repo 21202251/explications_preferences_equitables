@@ -1,0 +1,1117 @@
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:28 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_opt_gen.lp
+Reading time = 0.02 seconds
+Objectif: 245 rows, 215 columns, 886 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 245 rows, 215 columns and 886 nonzeros
+Model fingerprint: 0xaa968b53
+Variable types: 0 continuous, 215 integer (110 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+02]
+Presolve removed 75 rows and 49 columns
+Presolve time: 0.05s
+Presolved: 170 rows, 166 columns, 630 nonzeros
+Variable types: 0 continuous, 166 integer (89 binary)
+
+Root relaxation: objective 3.120000e+00, 116 iterations, 0.02 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.12000    0    8          -    3.12000      -     -    0s
+H    0     0                       5.4000000    3.12000  42.2%     -    0s
+H    0     0                       4.2400000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   11    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0    4    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   23    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   28    4.24000    3.12000  26.4%     -    0s
+H    0     0                       3.1200000    3.12000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 1
+  Implied bound: 5
+  MIR: 11
+  Flow cover: 9
+  Flow path: 3
+  RLT: 1
+  Relax-and-lift: 3
+
+Explored 1 nodes (399 simplex iterations) in 0.23 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3.12 4.24 5.4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.120000000000e+00, best bound 3.120000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_opt_gen.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:28 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_opt_res.lp
+Reading time = 0.01 seconds
+Objectif: 235 rows, 185 columns, 796 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 235 rows, 185 columns and 796 nonzeros
+Model fingerprint: 0xd48c4149
+Variable types: 0 continuous, 185 integer (105 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 82 rows and 56 columns
+Presolve time: 0.01s
+Presolved: 153 rows, 129 columns, 529 nonzeros
+Variable types: 0 continuous, 129 integer (82 binary)
+Found heuristic solution: objective 5.4000000
+Found heuristic solution: objective 4.2800000
+
+Root relaxation: objective 3.120000e+00, 69 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.12000    0   16    4.28000    3.12000  27.1%     -    0s
+H    0     0                       3.1200000    3.12000  0.00%     -    0s
+     0     0    3.12000    0   16    3.12000    3.12000  0.00%     -    0s
+
+Explored 1 nodes (128 simplex iterations) in 0.02 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3.12 4.28 5.4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.120000000000e+00, best bound 3.120000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_opt_res.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:28 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_opt_gen.lp
+Reading time = 0.01 seconds
+Objectif: 245 rows, 215 columns, 886 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 245 rows, 215 columns and 886 nonzeros
+Model fingerprint: 0xaa968b53
+Variable types: 0 continuous, 215 integer (110 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+02]
+Presolve removed 75 rows and 49 columns
+Presolve time: 0.01s
+Presolved: 170 rows, 166 columns, 630 nonzeros
+Variable types: 0 continuous, 166 integer (89 binary)
+
+Root relaxation: objective 3.120000e+00, 116 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.12000    0    8          -    3.12000      -     -    0s
+H    0     0                       5.4000000    3.12000  42.2%     -    0s
+H    0     0                       4.2400000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   11    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0    4    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   23    4.24000    3.12000  26.4%     -    0s
+     0     0    3.12000    0   28    4.24000    3.12000  26.4%     -    0s
+H    0     0                       3.1200000    3.12000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 1
+  Implied bound: 5
+  MIR: 11
+  Flow cover: 9
+  Flow path: 3
+  RLT: 1
+  Relax-and-lift: 3
+
+Explored 1 nodes (399 simplex iterations) in 0.06 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3.12 4.24 5.4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.120000000000e+00, best bound 3.120000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_opt_gen.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_dominance_owa.lp
+Reading time = 0.01 seconds
+Objectif: 5 rows, 3 columns, 13 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 5 rows, 3 columns and 13 nonzeros
+Model fingerprint: 0x1ee9e90b
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+00]
+  Objective range  [2e+00, 1e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 5 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.5000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  1.500000000e+00
+
+Wrote result file 'prog_lin/pl_dominance_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_dominance_owa.lp
+Reading time = 0.01 seconds
+Objectif: 6 rows, 5 columns, 18 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 6 rows, 5 columns and 18 nonzeros
+Model fingerprint: 0x2e96ee87
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 5e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 9 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.2142857e-02   7.235714e-02   0.000000e+00      0s
+       1    3.3333333e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.333333333e-01
+
+Wrote result file 'prog_lin/pl_dominance_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 155 rows, 135 columns, 561 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 155 rows, 135 columns and 561 nonzeros
+Model fingerprint: 0xdb9aaa67
+Variable types: 4 continuous, 131 integer (66 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 141 rows and 123 columns
+Presolve time: 0.01s
+Presolved: 14 rows, 12 columns, 44 nonzeros
+Variable types: 0 continuous, 12 integer (3 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 108 rows, 92 columns, 380 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 108 rows, 92 columns and 380 nonzeros
+Model fingerprint: 0x8cbf6340
+Variable types: 3 continuous, 89 integer (44 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 96 rows and 77 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 202 rows, 178 columns, 742 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 202 rows, 178 columns and 742 nonzeros
+Model fingerprint: 0x8e3da188
+Variable types: 5 continuous, 173 integer (88 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 75 rows and 51 columns
+Presolve time: 0.02s
+Presolved: 127 rows, 127 columns, 492 nonzeros
+Variable types: 0 continuous, 127 integer (72 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 155 rows, 135 columns, 561 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 155 rows, 135 columns and 561 nonzeros
+Model fingerprint: 0xdb9aaa67
+Variable types: 4 continuous, 131 integer (66 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 141 rows and 123 columns
+Presolve time: 0.01s
+Presolved: 14 rows, 12 columns, 44 nonzeros
+Variable types: 0 continuous, 12 integer (3 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:53 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 437 rows, 393 columns, 1647 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 437 rows, 393 columns and 1647 nonzeros
+Model fingerprint: 0x621a45e0
+Variable types: 10 continuous, 383 integer (198 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 113 rows and 78 columns
+Presolve time: 0.02s
+Presolved: 324 rows, 315 columns, 1208 nonzeros
+Variable types: 0 continuous, 315 integer (163 binary)
+
+Root relaxation: objective 0.000000e+00, 128 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   24          -    0.00000      -     -    0s
+     0     0    0.00000    0   48          -    0.00000      -     -    0s
+     0     0    0.00000    0   33          -    0.00000      -     -    0s
+     0     0    0.00000    0   37          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     2    0.00000    0   28          -    0.00000      -     -    0s
+* 1308   113              15       0.0000000    0.00000  0.00%  12.1    0s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 30
+  Implied bound: 34
+  MIR: 25
+  Flow cover: 1
+  Inf proof: 11
+  RLT: 3
+  Relax-and-lift: 2
+
+Explored 1376 nodes (18000 simplex iterations) in 0.60 seconds (0.26 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:54 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 108 rows, 92 columns, 380 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 108 rows, 92 columns and 380 nonzeros
+Model fingerprint: 0x66889deb
+Variable types: 3 continuous, 89 integer (44 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 18 rows and 28 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:54 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 202 rows, 178 columns, 742 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 202 rows, 178 columns and 742 nonzeros
+Model fingerprint: 0x0ca96e98
+Variable types: 5 continuous, 173 integer (88 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 68 rows and 48 columns
+Presolve time: 0.01s
+Presolved: 134 rows, 130 columns, 508 nonzeros
+Variable types: 0 continuous, 130 integer (73 binary)
+
+Root relaxation: objective 0.000000e+00, 84 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 1
+  Implied bound: 5
+  MIR: 7
+  StrongCG: 3
+  Flow cover: 2
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 2
+
+Explored 1 nodes (151 simplex iterations) in 0.04 seconds (0.01 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:54 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 390 rows, 350 columns, 1466 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 390 rows, 350 columns and 1466 nonzeros
+Model fingerprint: 0x961da196
+Variable types: 9 continuous, 341 integer (176 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 104 rows and 72 columns
+Presolve time: 0.02s
+Presolved: 286 rows, 278 columns, 1068 nonzeros
+Variable types: 0 continuous, 278 integer (145 binary)
+
+Root relaxation: objective 0.000000e+00, 129 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   27          -    0.00000      -     -    0s
+     0     0    0.00000    0   59          -    0.00000      -     -    0s
+     0     0    0.00000    0   25          -    0.00000      -     -    0s
+     0     0    0.00000    0   39          -    0.00000      -     -    0s
+     0     0    0.00000    0   39          -    0.00000      -     -    0s
+     0     0    0.00000    0   29          -    0.00000      -     -    0s
+     0     0    0.00000    0   29          -    0.00000      -     -    0s
+     0     0    0.00000    0   38          -    0.00000      -     -    0s
+     0     0    0.00000    0   38          -    0.00000      -     -    0s
+     0     2    0.00000    0   29          -    0.00000      -     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 212
+  Implied bound: 57
+  MIR: 31
+  Flow cover: 3
+  Inf proof: 55
+  Zero half: 3
+  RLT: 1
+  Relax-and-lift: 1
+
+Explored 4414 nodes (88125 simplex iterations) in 1.78 seconds (0.98 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:56 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.01 seconds
+Objectif: 766 rows, 694 columns, 2914 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 766 rows, 694 columns and 2914 nonzeros
+Model fingerprint: 0x2394c10f
+Variable types: 17 continuous, 677 integer (352 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 176 rows and 120 columns
+Presolve time: 0.04s
+Presolved: 590 rows, 574 columns, 2188 nonzeros
+Variable types: 0 continuous, 574 integer (289 binary)
+
+Root relaxation: objective 0.000000e+00, 255 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   27          -    0.00000      -     -    0s
+     0     0    0.00000    0   75          -    0.00000      -     -    0s
+     0     0    0.00000    0   63          -    0.00000      -     -    0s
+     0     0    0.00000    0   63          -    0.00000      -     -    0s
+     0     0    0.00000    0   45          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     2    0.00000    0   43          -    0.00000      -     -    0s
+*  583   303              24       0.0000000    0.00000  0.00%  15.0    0s
+
+Cutting planes:
+  Implied bound: 5
+  MIR: 21
+  Flow cover: 4
+  Inf proof: 1
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 2
+
+Explored 699 nodes (10890 simplex iterations) in 0.62 seconds (0.26 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:57 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 578 rows, 522 columns, 2190 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 578 rows, 522 columns and 2190 nonzeros
+Model fingerprint: 0xca721e82
+Variable types: 13 continuous, 509 integer (264 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 140 rows and 96 columns
+Presolve time: 0.03s
+Presolved: 438 rows, 426 columns, 1628 nonzeros
+Variable types: 0 continuous, 426 integer (217 binary)
+
+Root relaxation: objective 0.000000e+00, 164 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   21          -    0.00000      -     -    0s
+     0     0    0.00000    0   79          -    0.00000      -     -    0s
+     0     0    0.00000    0   61          -    0.00000      -     -    0s
+     0     0    0.00000    0   30          -    0.00000      -     -    0s
+     0     0    0.00000    0   30          -    0.00000      -     -    0s
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0   36          -    0.00000      -     -    0s
+     0     0    0.00000    0   33          -    0.00000      -     -    0s
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0   39          -    0.00000      -     -    0s
+     0     0    0.00000    0   20          -    0.00000      -     -    0s
+     0     0    0.00000    0   20          -    0.00000      -     -    0s
+     0     2    0.00000    0   20          -    0.00000      -     -    0s
+*  787   227              27       0.0000000    0.00000  0.00%  12.7    0s
+
+Cutting planes:
+  Cover: 8
+  Implied bound: 19
+  MIR: 28
+  StrongCG: 2
+  Flow cover: 2
+  Inf proof: 2
+  RLT: 3
+  Relax-and-lift: 3
+
+Explored 871 nodes (12787 simplex iterations) in 0.61 seconds (0.25 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:57 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 484 rows, 436 columns, 1828 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 484 rows, 436 columns and 1828 nonzeros
+Model fingerprint: 0x97bfa820
+Variable types: 11 continuous, 425 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 122 rows and 84 columns
+Presolve time: 0.03s
+Presolved: 362 rows, 352 columns, 1348 nonzeros
+Variable types: 0 continuous, 352 integer (181 binary)
+
+Root relaxation: objective 0.000000e+00, 146 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   16          -    0.00000      -     -    0s
+     0     0    0.00000    0   53          -    0.00000      -     -    0s
+     0     0    0.00000    0   29          -    0.00000      -     -    0s
+     0     0    0.00000    0   24          -    0.00000      -     -    0s
+     0     0    0.00000    0   47          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     0    0.00000    0   53          -    0.00000      -     -    0s
+     0     0    0.00000    0   32          -    0.00000      -     -    0s
+     0     0    0.00000    0   32          -    0.00000      -     -    0s
+     0     2    0.00000    0   32          -    0.00000      -     -    0s
+H 1447   209                       0.0000000    0.00000  0.00%  12.6    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 28
+  Implied bound: 28
+  MIR: 20
+  StrongCG: 2
+  Flow cover: 3
+  Flow path: 5
+  Inf proof: 16
+  RLT: 4
+  Relax-and-lift: 1
+
+Explored 1520 nodes (20925 simplex iterations) in 0.68 seconds (0.31 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:58 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_atx_sat_owa.lp
+Reading time = 0.02 seconds
+Objectif: 437 rows, 393 columns, 1647 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 437 rows, 393 columns and 1647 nonzeros
+Model fingerprint: 0x621a45e0
+Variable types: 10 continuous, 383 integer (198 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+07]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+07]
+Presolve removed 113 rows and 78 columns
+Presolve time: 0.02s
+Presolved: 324 rows, 315 columns, 1208 nonzeros
+Variable types: 0 continuous, 315 integer (163 binary)
+
+Root relaxation: objective 0.000000e+00, 128 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   24          -    0.00000      -     -    0s
+     0     0    0.00000    0   48          -    0.00000      -     -    0s
+     0     0    0.00000    0   33          -    0.00000      -     -    0s
+     0     0    0.00000    0   37          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   43          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     2    0.00000    0   28          -    0.00000      -     -    0s
+* 1308   113              15       0.0000000    0.00000  0.00%  12.1    0s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 30
+  Implied bound: 34
+  MIR: 25
+  Flow cover: 1
+  Inf proof: 11
+  RLT: 3
+  Relax-and-lift: 2
+
+Explored 1376 nodes (18000 simplex iterations) in 0.57 seconds (0.26 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_atx_sat_owa.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:59 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_farkas_1.lp
+Reading time = 0.01 seconds
+Objectif: 5 rows, 17 columns, 30 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 5 rows, 17 columns and 30 nonzeros
+Model fingerprint: 0x403a6c8b
+Variable types: 2 continuous, 15 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 5e+01]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_farkas_1.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:59 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_farkas_2.lp
+Reading time = 0.01 seconds
+Objectif: 11 rows, 17 columns, 44 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 11 rows, 17 columns and 44 nonzeros
+Model fingerprint: 0xd9be02a3
+Variable types: 2 continuous, 15 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 5e+01]
+Presolve removed 11 rows and 17 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_farkas_2.sol'
+
+
+Gurobi 12.0.2 (win64, gurobi_cl) logging started Tue Oct  6 16:43:59 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2840665
+Set parameter LogFile to value "gurobi.log"
+Using license file C:\Users\PC\gurobi.lic
+Academic license - for non-commercial use only - expires 2027-07-02
+
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 10.0 (19045.2))
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file prog_lin/pl_pi_lorenz.lp
+Reading time = 0.01 seconds
+OBJ: 48 rows, 54 columns, 162 nonzeros
+
+Using Gurobi shared library C:\gurobi1202\win64\bin\gurobi120.dll
+
+CPU model: Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 48 rows, 54 columns and 162 nonzeros
+Model fingerprint: 0x92c0d77a
+Variable types: 1 continuous, 53 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 33 rows and 30 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 24 columns, 71 nonzeros
+Variable types: 0 continuous, 24 integer (4 binary)
+
+Root relaxation: objective 0.000000e+00, 7 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'prog_lin/pl_pi_lorenz.sol'
+

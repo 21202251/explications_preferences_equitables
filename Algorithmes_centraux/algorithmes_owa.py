@@ -3,16 +3,15 @@ import numpy.typing as npt
 
 from itertools import permutations
 
+import time
+import subprocess
+
 from Algorithmes_centraux.outils_programmation_lineaire import * 
 from Algorithmes_centraux.programmation_lineaire import *
 
 from Algorithmes_centraux.schemas_ATX import *
 from Algorithmes_centraux.heuristiques_lorenz_restreinte import * 
 from Algorithmes_centraux.heuristiques_lorenz_generalisee import * 
-
-import time
-import subprocess
-chemin_gurobi: str = r"C:\gurobi1202\win64\bin\gurobi_cl" # a remplacer en fonction de l'ordinateur / os
 
 # ALGORITHMES OWA #
 
@@ -84,6 +83,7 @@ def recuperer_Farkas_1(n: int,  vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     pl_Farkas_1(n, vb, va, entier, m, aj, bj)
@@ -129,6 +129,7 @@ def recuperer_Farkas_2(n: int, vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     pl_Farkas_2(n, vb, va, entier, m, aj, bj)
@@ -174,6 +175,7 @@ def recuperer_Farkas_optimal(n: int, vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     pl_Farkas_optimal(n, vb, va, entier, m, aj, bj)
@@ -224,6 +226,7 @@ def recuperer_Farkas_avec_transferts(farkas: str,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     assert farkas in {"1", "optimal"}, "Nom de certificat de Farkas invalide."
@@ -256,7 +259,7 @@ def algorithme_permutation(vb: npt.NDArray, va: npt.NDArray,
         compromis: ensemble des compromis dans I
         l: borne inferieure du domaine
         U: borne superieure du domaine
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
     '''
     debut: float = time.time()
 
@@ -322,7 +325,7 @@ def farkas_et_Permutation(farkas: str,
         bj: liste des vecteurs domines (preferences utilisateurs)
         l: borne inferieure du domaine
         U: borne superieure du domaine
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     debut: float = time.time()
@@ -356,7 +359,7 @@ def rff(n: int, vb: npt.NDArray, va: npt.NDArray,
         lambdas: liste des coefficients de la I-congruence
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     pl_pi_Lorenz(n, vb, va, entier, m, lambdas, aj, bj)
@@ -417,6 +420,7 @@ def farkas_et_RFF(n: int, vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     debut: float = time.time()
@@ -445,7 +449,7 @@ def atx_Optimal(n: int, vb: npt.NDArray, va: npt.NDArray,
         m: nombre de preferences donnees par l'utilisateur
         aj: liste des vecteurs dominants (preferences utilisateurs)
         bj: liste des vecteurs domines (preferences utilisateurs)
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
     '''
     def tester(l: int)-> tuple:
         ''' 
@@ -746,7 +750,7 @@ def ctx(n: int, vb: npt.NDArray, va: npt.NDArray,
         bj: liste des vecteurs domines (preferences utilisateurs)
         l: borne inferieure du domaine
         U: borne superieure du domaine
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
     '''
     # Calcul des deltas
     compromis = np.array([aj[i] - bj[i] for i in range(len(aj))])
@@ -792,7 +796,7 @@ def farkas_et_CTX(farkas: str, n: int, vb: npt.NDArray, va: npt.NDArray,
         bj: liste des vecteurs domines (preferences utilisateurs)
         l: borne inferieure du domaine
         U: borne superieure du domaine
-        timeout:
+        timeout: duree maximale d'execution en secondes avant l'arret
         verbose: affichages si vrai
     '''
     # certificat Farkas
